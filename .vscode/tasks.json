@@ -1,0 +1,47 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "G++ Compile",
+			"command": "g++",
+			"args": [
+				"${file}",
+			],
+			"problemMatcher": [
+				"$gcc"
+			],
+		},
+		{
+			"type": "shell",
+			"label": "CD to file dir",
+			"command": "cd",
+			"args": ["${fileDirname}"],
+			// "dependsOn": ["G++ Compile"],
+			// "dependsOrder": "sequence"
+		},
+		{
+			"type": "shell",
+			"label": "G++ Run",
+			"command": "./a.exe",
+			// "dependsOn": ["CD to file dir"],
+			// "dependsOrder": "sequence",
+            "group": {
+						"kind": "build",
+						"isDefault": true
+                     },
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": false
+			},
+			"runOptions": {
+				"reevaluateOnRerun": true,
+				"instanceLimit": 1
+			}
+		}
+	]
+}
