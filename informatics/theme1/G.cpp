@@ -2,6 +2,8 @@
 #include <cmath>
 using namespace std;
 
+/*Дано двузначное число. Найдите число десятков в нем.*/
+
 int main()
 {
     int a;

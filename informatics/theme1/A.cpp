@@ -2,6 +2,8 @@
 #include <cmath>
 using namespace std;
 
+/*Дано два числа a и b. Найдите гипотенузу треугольника с заданными катетами.*/
+
 int main()
 {
 	double a, b;

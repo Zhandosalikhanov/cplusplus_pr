@@ -2,6 +2,8 @@
 #include <cmath>
 using namespace std;
 
+/*Дано натуральное число. Выведите его последнюю цифру.*/
+
 int main()
 {
     int a;
